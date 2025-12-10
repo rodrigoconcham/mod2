@@ -30,7 +30,7 @@ adicionales para personalización, los usuarios pueden adaptar el comando para s
 necesidades de monitoreo, desde simples verificaciones de disponibilidad hasta análisis detallados 
 de rendimiento.`,
 	PersistentPreRun: func(cmd *cobra.Command, args []string) {
-		l = logger.NewLogger(logFile)
+		l = logger.NewLogger(logFile, silent, verbose)
 	},
 }
 
